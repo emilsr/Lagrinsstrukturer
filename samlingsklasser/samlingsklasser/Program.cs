@@ -6,11 +6,12 @@ using System.Text;
 namespace Lagrinsstrukturer
 {
     class Program
-    {
-        // övning1
-        //SortedList är sorterad de är inte Dictionary, Därför tar detr längre tid om du kör ett program som har SortedList. 
+    {   
         static void Main(string[] args)
         {
+            //övning1
+            /*
+             * //SortedList är sorterad de är inte Dictionary, Därför tar detr längre tid om du kör ett program som har SortedList. 
             //Skapa en dictionary med int som nyckel och int som värde
             SortedList<int, int> resultat = new SortedList<int, int>();
 
@@ -37,6 +38,53 @@ namespace Lagrinsstrukturer
                 Console.WriteLine("Nyckel: {0} Värde: {1}", kvp.Key, kvp.Value);
             }
             Console.ReadKey();
+            
+            //övning2
+            List<int> lista = new List<int>();
+            int sum = 0;
+            bool stanna = true;
+            var i = 0;
+            while (stanna)
+            {
+                lista.Add(int.Parse(Console.ReadLine()));
+                sum += lista[i];                
+                if (lista[i] == 0)
+                {
+                    stanna = false;
+                }
+                Console.WriteLine(sum / lista.Count);
+                i++;
+            }
+            */
+            //övning3
+            List<string> lista = new List<string>();
+            string kort;
+            for (int i = 1; i < 5; i++)
+            {
+                for (int j = 1; j < 14; j++)
+                {
+                    if (i==1)
+                    {
+                        lista.Add(kort = "K" +j.ToString());
+                        if (j==11)
+                        {
+
+                        }
+                    }
+                    else if (i==2)
+                    {
+                        lista.Add(kort = "S" + j.ToString());
+                    }
+                    else if (i == 3)
+                    {
+                        lista.Add(kort = "H" + j.ToString());
+                    }
+                    else if (i == 4)
+                    {
+                        lista.Add(kort = "R" + j.ToString());
+                    }
+                }   
+            }
         }
     }
 }
