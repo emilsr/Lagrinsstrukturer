@@ -47,6 +47,6 @@ namespace note_Pad
 
                 File.WriteAllText(filename, textBox.Text);
             }
-        }//asdasdasd
+        }//asdasdasdasd
     }
 }
